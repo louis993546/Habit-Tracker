@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Habit_TrackerApp: App {
+    @ObservedObject private var data = HabitsData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(habits: $data.habits, saveAction: { data.save() })
+                .onAppear {
+                    data.load()
+                }
         }
     }
 }

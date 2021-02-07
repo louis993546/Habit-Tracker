@@ -25,6 +25,14 @@
 		A1555B3B25D0298500DB4003 /* HabitsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B3925D0298500DB4003 /* HabitsData.swift */; };
 		A1555B3F25D02D3100DB4003 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A1555B3E25D02D3100DB4003 /* LICENSE */; };
 		A1555B4025D02D3100DB4003 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A1555B3E25D02D3100DB4003 /* LICENSE */; };
+		A1555B4725D047E500DB4003 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B4625D047E500DB4003 /* EditView.swift */; };
+		A1555B4825D047E500DB4003 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B4625D047E500DB4003 /* EditView.swift */; };
+		A1555B4E25D052FB00DB4003 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B4D25D052FB00DB4003 /* Date+Extension.swift */; };
+		A1555B4F25D052FB00DB4003 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B4D25D052FB00DB4003 /* Date+Extension.swift */; };
+		A1555B5325D0577E00DB4003 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B5225D0577E00DB4003 /* DebugView.swift */; };
+		A1555B5425D0577E00DB4003 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B5225D0577E00DB4003 /* DebugView.swift */; };
+		A1555B5825D058B300DB4003 /* Data+PrettyPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B5725D058B300DB4003 /* Data+PrettyPrint.swift */; };
+		A1555B5925D058B300DB4003 /* Data+PrettyPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B5725D058B300DB4003 /* Data+PrettyPrint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +51,10 @@
 		A1555B3925D0298500DB4003 /* HabitsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsData.swift; sourceTree = "<group>"; };
 		A1555B3E25D02D3100DB4003 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A1555B4325D02D3B00DB4003 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1555B4625D047E500DB4003 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		A1555B4D25D052FB00DB4003 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		A1555B5225D0577E00DB4003 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		A1555B5725D058B300DB4003 /* Data+PrettyPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyPrint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +93,11 @@
 				A1555B3125D0241300DB4003 /* Models */,
 				A1555AFF25D01B6D00DB4003 /* Habit_TrackerApp.swift */,
 				A1555B0025D01B6D00DB4003 /* ContentView.swift */,
-				A1555B0125D01B6E00DB4003 /* Assets.xcassets */,
 				A1555B2225D01D2400DB4003 /* HabitCard.swift */,
 				A1555B2725D01D3200DB4003 /* HabitsList.swift */,
+				A1555B4625D047E500DB4003 /* EditView.swift */,
+				A1555B0125D01B6E00DB4003 /* Assets.xcassets */,
+				A1555B5225D0577E00DB4003 /* DebugView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -120,6 +134,8 @@
 				A1555B2C25D01D6A00DB4003 /* Models.swift */,
 				A1555B3225D0242500DB4003 /* Color+Codable.swift */,
 				A1555B3925D0298500DB4003 /* HabitsData.swift */,
+				A1555B4D25D052FB00DB4003 /* Date+Extension.swift */,
+				A1555B5725D058B300DB4003 /* Data+PrettyPrint.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,11 +241,15 @@
 			files = (
 				A1555B1425D01B6E00DB4003 /* ContentView.swift in Sources */,
 				A1555B2325D01D2400DB4003 /* HabitCard.swift in Sources */,
+				A1555B4725D047E500DB4003 /* EditView.swift in Sources */,
 				A1555B3A25D0298500DB4003 /* HabitsData.swift in Sources */,
 				A1555B2825D01D3200DB4003 /* HabitsList.swift in Sources */,
 				A1555B1225D01B6E00DB4003 /* Habit_TrackerApp.swift in Sources */,
+				A1555B5325D0577E00DB4003 /* DebugView.swift in Sources */,
 				A1555B3325D0242500DB4003 /* Color+Codable.swift in Sources */,
+				A1555B5825D058B300DB4003 /* Data+PrettyPrint.swift in Sources */,
 				A1555B2D25D01D6A00DB4003 /* Models.swift in Sources */,
+				A1555B4E25D052FB00DB4003 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,11 +259,15 @@
 			files = (
 				A1555B1525D01B6E00DB4003 /* ContentView.swift in Sources */,
 				A1555B2425D01D2400DB4003 /* HabitCard.swift in Sources */,
+				A1555B4825D047E500DB4003 /* EditView.swift in Sources */,
 				A1555B3B25D0298500DB4003 /* HabitsData.swift in Sources */,
 				A1555B2925D01D3200DB4003 /* HabitsList.swift in Sources */,
 				A1555B1325D01B6E00DB4003 /* Habit_TrackerApp.swift in Sources */,
+				A1555B5425D0577E00DB4003 /* DebugView.swift in Sources */,
 				A1555B3425D0242500DB4003 /* Color+Codable.swift in Sources */,
+				A1555B5925D058B300DB4003 /* Data+PrettyPrint.swift in Sources */,
 				A1555B2E25D01D6A00DB4003 /* Models.swift in Sources */,
+				A1555B4F25D052FB00DB4003 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

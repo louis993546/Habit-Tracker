@@ -15,15 +15,45 @@ struct HabitCard: View {
             // This cannot be a button because of the NavigationLink from the lsit
             Image(systemName: "plus")
                 .onTapGesture {
-                    print("TODO")
+                    let test = addOneTo(habit, date: Date().stripTime())
+                    habit.updateHistory(to: test)
                 }
             HStack {
-                Text(habit.name)
+                VStack(alignment: .leading) {
+                    Text(habit.name)
+                        .font(.headline)
+                    Text("\(habit.goal) \(timeOrTimes(habit.goal)) per \(periodToString(habit.period))")
+                        .font(.caption)
+                }
                 Spacer()
-                Text("0")
+                Text("\(habit.history.count)")
             }
             .padding()
         }
+    }
+    
+    func timeOrTimes(_ count: Int) -> String {
+        return count == 1 ? "time" : "times"
+    }
+    
+    func periodToString(_ period: HabitPeriod) -> String {
+        switch period {
+        case .daily:
+            return "day"
+        case .weekly:
+            return "week"
+        case .monthly:
+            return "month"
+        case .yearly:
+            return "year"
+        }
+    }
+    
+    func addOneTo(_ habit: Habit, date: Date) -> [Date:Int] {
+        let historyForDate = habit.history[date]
+        return [
+            date: (historyForDate ?? 0) + 1
+        ]
     }
 }
 

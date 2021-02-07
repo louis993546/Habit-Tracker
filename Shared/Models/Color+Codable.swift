@@ -77,7 +77,7 @@ extension Color: Codable {
         #if os(macOS)
         NSColor(self).getRed(&red, green: &green, blue: &blue, alpha: nil)
         #else
-        UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: nil)
         #endif
         return isLightColor(red: red, green: green, blue: blue) ? .black : .white
     }

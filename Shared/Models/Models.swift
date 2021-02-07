@@ -63,4 +63,34 @@ extension Habit {
         preview,
         preview,
     ]
+    
+    struct Data {
+        var name: String = ""
+        var color: Color = .random
+        var type: HabitType = .moreThan
+        var goal: Int = 1
+        var period: HabitPeriod = .daily
+    }
+    
+    var data: Data {
+        return Data(
+            name: name,
+            color: color,
+            type: type,
+            goal: goal,
+            period: period
+        )
+    }
+    
+    mutating func update(from data: Data) {
+        name = data.name
+        color = data.color
+        type = data.type
+        goal = data.goal
+        period = data.period
+    }
+    
+    mutating func updateHistory(to data: [Date:Int]) {
+        history = data
+    }
 }

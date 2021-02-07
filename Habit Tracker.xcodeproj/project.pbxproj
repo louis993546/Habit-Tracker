@@ -23,6 +23,8 @@
 		A1555B3425D0242500DB4003 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B3225D0242500DB4003 /* Color+Codable.swift */; };
 		A1555B3A25D0298500DB4003 /* HabitsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B3925D0298500DB4003 /* HabitsData.swift */; };
 		A1555B3B25D0298500DB4003 /* HabitsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1555B3925D0298500DB4003 /* HabitsData.swift */; };
+		A1555B3F25D02D3100DB4003 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A1555B3E25D02D3100DB4003 /* LICENSE */; };
+		A1555B4025D02D3100DB4003 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A1555B3E25D02D3100DB4003 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		A1555B2C25D01D6A00DB4003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		A1555B3225D0242500DB4003 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		A1555B3925D0298500DB4003 /* HabitsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsData.swift; sourceTree = "<group>"; };
+		A1555B3E25D02D3100DB4003 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A1555B4325D02D3B00DB4003 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		A1555AF925D01B6C00DB4003 = {
 			isa = PBXGroup;
 			children = (
+				A1555B4325D02D3B00DB4003 /* README.md */,
+				A1555B3E25D02D3100DB4003 /* LICENSE */,
 				A1555AFE25D01B6D00DB4003 /* Shared */,
 				A1555B0825D01B6E00DB4003 /* iOS */,
 				A1555B0F25D01B6E00DB4003 /* macOS */,
@@ -196,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1555B3F25D02D3100DB4003 /* LICENSE in Resources */,
 				A1555B1625D01B6E00DB4003 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1555B4025D02D3100DB4003 /* LICENSE in Resources */,
 				A1555B1725D01B6E00DB4003 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

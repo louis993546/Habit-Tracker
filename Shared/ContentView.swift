@@ -19,9 +19,14 @@ struct ContentView: View {
             NavigationView {
                 HabitsList(habits: $habits)
                     .navigationTitle("Habits")
-                    .navigationBarItems(trailing: Button(action: { print("test" )}){
-                        Image(systemName: "plus")
-                    })
+                    .toolbar{
+                        ToolbarItem(placement: .primaryAction) {
+                            Button(action: { print("test" )}){
+                                Image(systemName: "plus")
+                            }
+                        }
+                    }
+//                    .navigationBarItems(trailing: )
             }
 //            .tabItem {
 //                Image(systemName: "list.bullet")

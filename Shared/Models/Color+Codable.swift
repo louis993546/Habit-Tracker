@@ -35,7 +35,11 @@ extension Color: Codable {
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
+        #if os(macOS)
+        NSColor(self).getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        #else
         UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        #endif
         return Components(red: Double(red),
                           green: Double(green),
                           blue: Double(blue),
@@ -70,7 +74,11 @@ extension Color: Codable {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
-        UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: nil)
+        #if os(macOS)
+        NSColor(self).getRed(&red, green: &green, blue: &blue, alpha: nil)
+        #else
+        UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        #endif
         return isLightColor(red: red, green: green, blue: blue) ? .black : .white
     }
     
